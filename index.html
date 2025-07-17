@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="form-style.css">
 </head>
 <body>
+    <img src="background-islands.jpg" alt="background">
     <div class="logo">
+        <img src="custom_logo.svg" alt="Here is the logo">
         <h1>H4CKERINO</h1>
     </div>
     <div class="form-body">
@@ -17,10 +19,38 @@
             data like credit card number and secret code 😉
         </p>
         <div class="form-inputs">
-            <form action="post">
-                <label for=""></label>
+            <form>
+                <fieldset>
+                    <legend>Come on insert your juicy data!</legend>
+                    <label for="name">
+                        FIRST NAME
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label for="last-name">
+                        LAST NAME
+                        <input type="text" name="lastName" id="last-name">
+                    </label>
+                    <label for="email">
+                        EMAIL
+                        <input type="email" name="emailAd" id="email">
+                    </label>
+                    <label for="phone-number">
+                        PHONE NUMBER
+                        <input type="tel" name="phoneNumber" id="phone-number">
+                    </label>
+                    <label for="password">
+                        PASSWORD
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <label for="confirm-password">
+                        CONFIRM PASSWORD
+                        <input type="password" name="confirmPassword" id="confirm-password">
+                    </label>
+                </fieldset>
+                <button type="submit">Create Account</button>
             </form>
-        </div>
+            <p>Already have an acoount? <a href="">Log in</a></p>
+        </div>      
     </div>
 </body>
 </html>
