@@ -80,13 +80,13 @@ body {
 .form-body .header{
     font-size: 2rem;
     color: grey;
-    margin: 5ch 0ch 5ch 0ch;
+    margin: 2ch 0ch 2ch 0ch;
 }
 
 fieldset{
     position: relative;
     padding: 5ch;
-    margin: 0ch -2ch 5ch -2ch;
+    margin: 0ch -2ch 2ch -2ch;
     border-radius: 10px;
     border: lightgrey solid 1px;
     display: flex;
@@ -95,7 +95,7 @@ fieldset{
     flex-wrap: wrap;
     gap: 5ch;
     background-color: white;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
 }
 
 legend{
@@ -123,3 +123,32 @@ input{
     width:30ch;
     height: 2em;
 }
+
+ form button{
+    border-radius: 5px;
+    text-align: center;
+    padding:1ch;
+    background-color: rgb(67, 121, 57);
+    color: white;
+    margin-bottom: 1ch;
+    box-shadow: none;
+    border: 0px solid grey;
+ }
+
+ a{
+    text-decoration: none;
+    color: rgb(67, 121, 57)
+ }
+
+ a:hover{
+    cursor:pointer;
+    color:rgb(1,1,96)
+ }
+
+ input:invalid{
+    border: 1px solid red;
+ }
+
+ input:focus{
+    border: 2px solid rgba(1,1,68,1)
+ }
